@@ -1,0 +1,18 @@
+.bg-footer-contact{
+    background: linear-gradient(rgba(0, 139, 109, 0.8),rgba(0, 139, 109, 0.8)), url('../../public/img/contact.jpg');
+    background-size: cover;
+    
+}
+
+.bg-footer-mail{
+    background: linear-gradient(rgba(24, 34, 60, 0.8),rgba(24, 34, 60, 0.8)), url('../../public/img/mail.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    background: linear-gradient(rgba(0, 139, 109, 0.8),rgba(0, 139, 109, 0.8)), url('../../public/img/footer.jpg');
+    background-size: cover;
+    background-position: center;
+
+}

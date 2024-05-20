@@ -1,0 +1,163 @@
+
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url(../../public/img/header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.triangle{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: var(--acc-50);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    top: 0;
+    left: 0;
+}
+
+.triangleBlue{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--dark-blue-50);
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+    bottom: 0;
+    right: 0;
+}
+
+
+.header span{
+    -webkit-text-stroke-color: var(--white);
+    -webkit-text-stroke-width: 2px ;
+    color: #008b6d9d;
+}
+
+.img-grid1{
+    background-image: url(../../public/img/grid1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+
+.img-grid4{
+    background-image: url(../../public/img/grid4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  right;
+}
+
+
+.gridAnimation > div:nth-child(1) {
+    animation: up 0.9s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    transform: translateY(800px);
+}
+
+.gridAnimation > div:nth-child(2) {
+    animation: up 0.9s ease forwards;
+    opacity: 0;
+    transform: translateY(800px);
+}
+
+.gridAnimation > div:nth-child(3) {
+    animation: up 0.9s ease forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+    transform: translateY(800px);
+}
+
+.gridAnimation > div:nth-child(4) {
+    animation: up 0.9s ease-in-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    transform: translateY(800px);
+    
+}
+
+.containerAnimation{
+    animation: down 0.4s ease forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.containerTitle{
+    background: transparent;
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%); 
+    animation: title 1.5s ease-in-out forwards ;
+    animation-delay: 0.4s;
+}
+
+.animationLeft{
+    animation: left 0.6s ease forwards ;
+    animation-delay: 1s;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+@keyframes title {
+    from {
+      clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%); 
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+    }
+  }
+
+  @keyframes up {
+    from {
+        opacity: 0.5;
+        transform: translateY(800px);
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes down {
+    from {
+        opacity: 0.5;
+        transform: translateY(-30px);
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.beat{
+    opacity: 0;
+    transform: scale(0);
+    animation: heartbeat ease-in 1.5s forwards;
+
+}
+
+@keyframes heartbeat {
+    0% {
+      transform: scale(0);
+    }
+    50%,80%,100%{
+      transform: scale(1);
+      opacity: 1;
+    }70%,90%{
+      transform: scale(0.8);
+      opacity: 1;
+    }
+  }
+
+
+

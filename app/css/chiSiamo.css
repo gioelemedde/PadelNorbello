@@ -1,0 +1,128 @@
+ 
+.sectionChiSiamo{
+    background: url(../../public/img/bgsection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgInfo{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background: #008b6dce;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    right: -15%;
+    top: 39%;
+}
+
+.sectionIcon{
+    background: linear-gradient(#18223c7c,#18223c85), url('../../public/img/sectionIcon.jpg');
+    background-position: center 60%;
+}
+
+.bgCampo1{
+    background:linear-gradient(rgba(24, 34, 60, 0.7),rgba(24, 34, 60, 0.7)), url('../../public/img/campo1.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.bgCampo2{
+    background:linear-gradient(rgba(24, 34, 60, 0.7),rgba(24, 34, 60, 0.7)), url('../../public/img/campo2.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.bgCampo3{
+    background:linear-gradient(rgba(24, 34, 60, 0.7),rgba(24, 34, 60, 0.7)), url('../../public/img/campo3.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.cardCampo1{
+    background:linear-gradient(#18223cd3,#18223cd7), url('../../public/img/campo1.jpg');
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+
+.cardCampo1::after{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.cardCampo1::before{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+
+.cardCampo2{
+    background:linear-gradient(#18223cd3,#18223cd7), url('../../public/img/campo2.jpg');
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+
+.cardCampo2::after{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.cardCampo2::before{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+
+.cardCampo3{
+    background:linear-gradient(#18223cd3,#18223cd7), url('../../public/img/campo3.jpg');
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+
+.cardCampo3::after{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.cardCampo3::before{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}

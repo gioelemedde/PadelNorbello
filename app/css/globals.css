@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --acc: #008B6D;
+  --acc-50: #008b6dbc;
+  --dark-blue: #18223C;
+  --dark-blue-50: #18223cb4;
+  --white: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--acc-50);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--acc);
+}
+
+@font-face {
+  font-family: Title;
+  src: url(../font/Nexa-Heavy.ttf);
+}
+@font-face {
+  font-family: FontNormal;
+  src: url(../font/Nexa-ExtraLight.ttf);
+}
+
+body{
+  background-color: var(--white);
+  font-family: FontNormal !important;
+}
+
+h1,h2,h3,h4{
+  font-family: Title;
+}
+
+.text-blue{
+  color: var(--dark-blue);
+}
+
+/* BOTTONI  */
+
+.btn{
+    font-weight: bold;
+    line-height: 1em;
+    letter-spacing: 2px;
+    background-color: var(--acc);
+    box-shadow: 3px 3px 2px 1px #2d4528;
+    padding: 12px 20px ;
+    transition: 0.5s;
+}
+
+.btn2{
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: 2px;
+  background-color: var(--dark-blue);
+  box-shadow: 3px 3px 2px 1px #040797;
+  padding: 12px 20px ;
+  transition: 0.5s;
+}
+
+.btn-nav{
+  border: 2px solid var(--acc);
+  box-shadow: 3px 3px 2px 1px #095a48;
+  padding: 5px 20px;
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
+
+.btn-nav:hover{
+  transform: translate(3px, 3px);
+  box-shadow: none;
+  background-color: var(--acc);
+ 
+ }
+
+.btn:hover{
+ transform: translate(3px, 3px);
+ box-shadow: none;
+
+}
+
+.btn2:hover{
+  transform: translate(3px, 3px);
+  box-shadow: none;
+ 
+ }
+
+.btn-card{
+  color: var(--white);
+  font-weight: bold;
+  border: 2px solid var(--acc);
+  padding: 4px 50px;
+  background-color: #008b6d8e;
+  backdrop-filter: blur(10px);
+  transition: 0.6s;
+}
+
+.btn-card:hover{
+  backdrop-filter: blur(0px);
+  background-color: #008b6d;
+}
+
+
+
+
+

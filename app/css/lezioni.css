@@ -1,0 +1,50 @@
+.headerLezioni{
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../public/img/contact.jpg);
+    background-size: cover;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+}
+
+.imgLezioni{
+    background-image: url(../../public/img/grid1.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionIcon{
+    background: linear-gradient(#18223c7c,#18223c85), url('../../public/img/sectionIcon.jpg');
+    background-position: center 60%;
+}
+.containerTitle{
+    background: transparent;
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%); 
+    animation: title 1s ease-in-out forwards ;
+    
+}
+
+@keyframes title {
+    from {
+      clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%); 
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+    }
+  }
+
+
+.imgCardLezioni{
+  color: var(--white);
+  background: linear-gradient(#18223cee,#18223ce1), url('../../public/img/grid4.jpg');
+  height: 190px;
+  width: 345px;
+  background-size: cover;
+}
+
+.imgCardLezioni2{
+  color: var(--white);
+  background: linear-gradient(#008b6dce,#008b6ddc), url('../../public/img/grid1.jpg');
+  height: 190px;
+  width: 345px;
+  background-size: cover;
+}

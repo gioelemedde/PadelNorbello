@@ -1,0 +1,16 @@
+.headerCampoEstivo{
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../public/img/campoEstivo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+form{
+    color: var(--white);
+}
+
+form input{
+    background-color: transparent;
+    border-bottom: 2px solid var(--acc);
+}
