@@ -43,9 +43,9 @@ function ChiSiamo() {
               <div className="grid grid-cols-2 gap-8 gap-y-8 mt-5 text">
                 <div className="col-span-2 lg:col-span-1 ">
                   <p>
-                    Benvenuti alla
+                    Benvenuti alla {""}
                     <span className=" font-bold text-[var(--dark-blue)]">
-                      Sport Club Time ASD
+                       Sport Club Time ASD
                     </span>
                     , la tua destinazione per un&rsquo;esperienza di padel di
                     qualità a Norbello. Fondata nel 2024, siamo orgogliosi di
@@ -55,7 +55,7 @@ function ChiSiamo() {
                     completamente nella bellezza del nostro clima.
                   </p>
                 </div>
-                <div className="col-span-2 lg:col-span-1">
+                <div className="col-span-2 lg:col-span-1 ">
                   <p>
                     Inoltre, abbiamo un campo da pickleball per coloro che
                     desiderano provare una variante eccitante del gioco. La
@@ -140,12 +140,12 @@ function ChiSiamo() {
                       {" "}
                       campo da padel all&rsquo;aperto{" "}
                     </span>
-                    nostro offre un&rsquo;esperienza di gioco coinvolgente e dinamica
-                    in un ambiente naturale e aperto. La superficie in erba
-                    sintetica garantisce una perfetta combinazione di stabilità
-                    e ammortizzazione, consentendo movimenti fluidi e rapidi
-                    durante il gioco. Le dimensioni standard (10x20 metri)
-                    offrono spazio sufficiente per partite competitive e
+                    nostro offre un&rsquo;esperienza di gioco coinvolgente e
+                    dinamica in un ambiente naturale e aperto. La superficie in
+                    erba sintetica garantisce una perfetta combinazione di
+                    stabilità e ammortizzazione, consentendo movimenti fluidi e
+                    rapidi durante il gioco. Le dimensioni standard (10x20
+                    metri) offrono spazio sufficiente per partite competitive e
                     divertenti, mentre le recinzioni robuste assicurano che la
                     palla rimanga in gioco senza compromettere la visibilità.
                   </p>
@@ -187,13 +187,13 @@ function ChiSiamo() {
                       {" "}
                       nostro campo da padel al coperto{" "}
                     </span>
-                    offre un&rsquo;esperienza di gioco senza pari, indipendentemente
-                    dalle condizioni meteorologiche esterne. La nostra struttura
-                    garantisce un ambiente controllato e confortevole per
-                    giocare a padel tutto l&rsquo;anno. Con una superficie sintetica
-                    di alta qualità, i nostri campi offrono una perfetta
-                    combinazione di grip e reattività, consentendo movimenti
-                    agili e veloci
+                    offre un&rsquo;esperienza di gioco senza pari,
+                    indipendentemente dalle condizioni meteorologiche esterne.
+                    La nostra struttura garantisce un ambiente controllato e
+                    confortevole per giocare a padel tutto l&rsquo;anno. Con una
+                    superficie sintetica di alta qualità, i nostri campi offrono
+                    una perfetta combinazione di grip e reattività, consentendo
+                    movimenti agili e veloci
                   </p>
                 </div>
                 <p className="text-[var(--dark-blue)] mb-2 ">
@@ -255,15 +255,15 @@ function ChiSiamo() {
                 <div className=" lg:max-h-[300px] lg:overflow-y-auto">
                   <p className="mb-2 hidden lg:block ">
                     Il <span className="font-bold"> campo da pickleball </span>
-                    offre un&rsquo;esperienza di gioco emozionante e coinvolgente,
-                    adatta a giocatori di tutte le età e livelli di abilità. La
-                    nostra struttura offre una superficie in cemento liscio e
-                    resistente, ideale per movimenti rapidi e reattivi. Le
-                    dimensioni standard (20x44 piedi) offrono spazio sufficiente
-                    per partite dinamiche e competitive. Le linee ben definite
-                    assicurano un gioco fluido e senza confusioni.
-                    L&rsquo;illuminazione di qualità garantisce partite entusiasmanti
-                    anche dopo il tramonto.
+                    offre un&rsquo;esperienza di gioco emozionante e
+                    coinvolgente, adatta a giocatori di tutte le età e livelli
+                    di abilità. La nostra struttura offre una superficie in
+                    cemento liscio e resistente, ideale per movimenti rapidi e
+                    reattivi. Le dimensioni standard (20x44 piedi) offrono
+                    spazio sufficiente per partite dinamiche e competitive. Le
+                    linee ben definite assicurano un gioco fluido e senza
+                    confusioni. L&rsquo;illuminazione di qualità garantisce
+                    partite entusiasmanti anche dopo il tramonto.
                   </p>
                 </div>
                 <p className="text-[var(--dark-blue)] mb-2 ">
@@ -326,11 +326,14 @@ function ChiSiamo() {
                     35€
                   </span>
                 </div>
-                <a className=""
+                <a
+                  className=""
                   href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
                   target="_blank"
                 >
-                  <button className="btn-card mt-5 w-full uppercase">Prenota</button>
+                  <button className="btn-card mt-5 w-full uppercase">
+                    Prenota
+                  </button>
                 </a>
               </div>
             </Observer>
@@ -367,11 +370,14 @@ function ChiSiamo() {
                     35€
                   </span>
                 </div>
-                <a className=""
+                <a
+                  className=""
                   href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
                   target="_blank"
                 >
-                  <button className="btn-card mt-5 w-full uppercase">Prenota</button>
+                  <button className="btn-card mt-5 w-full uppercase">
+                    Prenota
+                  </button>
                 </a>
               </div>
             </Observer>
@@ -408,11 +414,14 @@ function ChiSiamo() {
                     35€
                   </span>
                 </div>
-                <a className=""
+                <a
+                  className=""
                   href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
                   target="_blank"
                 >
-                  <button className="btn-card mt-5 w-full uppercase">Prenota</button>
+                  <button className="btn-card mt-5 w-full uppercase">
+                    Prenota
+                  </button>
                 </a>
               </div>
             </Observer>

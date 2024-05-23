@@ -37,10 +37,16 @@
   font-family: FontNormal;
   src: url(../font/Nexa-ExtraLight.ttf);
 }
+html{
+  background-color: var(--white)!important;
+  color: black !important;
+  font-weight: 500;
+}
 
 body{
-  background-color: var(--white);
+  background-color: var(--white)!important;
   font-family: FontNormal !important;
+  
 }
 
 h1,h2,h3,h4{
@@ -53,14 +59,25 @@ h1,h2,h3,h4{
 
 /* BOTTONI  */
 
-.btn{
+.btnCustom{
     font-weight: bold;
     line-height: 1em;
     letter-spacing: 2px;
-    background-color: var(--acc);
-    box-shadow: 3px 3px 2px 1px #2d4528;
+    background-color: var(--acc); 
+    box-shadow: 3px 3px 2px 1px #014b1f;
     padding: 12px 20px ;
     transition: 0.5s;
+}
+
+.btnCustomMobile{
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: 2px;
+  /* background-color: var(--acc); */
+  /* box-shadow: 3px 3px 2px 1px #014b1f; */
+  padding: 12px 20px ;
+  transition: 0.5s;
+  border: 3px solid var(--acc);
 }
 
 .btn2{
@@ -76,9 +93,11 @@ h1,h2,h3,h4{
 .btn-nav{
   border: 2px solid var(--acc);
   box-shadow: 3px 3px 2px 1px #095a48;
-  padding: 5px 20px;
+  padding: 10px 20px;
   transition: 0.5s;
   margin-bottom: 5px;
+  font-weight: bold;
+  line-height: 1em;
 }
 
 .btn-nav:hover{
@@ -88,7 +107,7 @@ h1,h2,h3,h4{
  
  }
 
-.btn:hover{
+.btnCustom:hover{
  transform: translate(3px, 3px);
  box-shadow: none;
 
@@ -114,6 +133,96 @@ h1,h2,h3,h4{
   backdrop-filter: blur(0px);
   background-color: #008b6d;
 }
+
+.animation-left{
+  animation: left 0.3s ease forwards ;
+  animation-delay: 0.1s;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.animation-right{
+  animation: right 0.3s ease forwards ;
+  animation-delay: 0.1s;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.animation-up{
+  animation: up 0.3s ease forwards ;
+  animation-delay: 0.1s;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.animation-down{
+  animation: down 0.3s ease forwards ;
+  animation-delay: 0.1s;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.animation-zoom{
+  animation: zoom 0.3s ease forwards ;
+  animation-delay: 0.1s;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+
+
+
+
+@keyframes up {
+  from {
+      opacity: 0.5;
+      transform: translateY(800px);
+  }to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@keyframes down {
+  from {
+      opacity: 0.5;
+      transform: translateY(-30px);
+  }to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@keyframes left {
+  from {
+      opacity: 0;
+      transform: translateX(-100px);
+  }to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes right {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes zoom {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }to{
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
 
 
 

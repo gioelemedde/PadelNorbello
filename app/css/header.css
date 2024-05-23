@@ -8,6 +8,10 @@
     background-attachment: fixed;
 }
 
+.header h1{
+    text-shadow: 2px 2px 15px black;
+}
+
 .triangle{
     position: absolute;
     width: 350px;
@@ -29,7 +33,7 @@
 }
 
 
-.header span{
+header span{
     -webkit-text-stroke-color: var(--white);
     -webkit-text-stroke-width: 2px ;
     color: #008b6d9d;
@@ -101,14 +105,14 @@
 
 @keyframes title {
     from {
-      clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%); 
+        clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%); 
     }
     to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
     }
-  }
+}
 
-  @keyframes up {
+@keyframes up {
     from {
         opacity: 0.5;
         transform: translateY(800px);
@@ -143,21 +147,75 @@
     opacity: 0;
     transform: scale(0);
     animation: heartbeat ease-in 1.5s forwards;
-
+    
 }
 
 @keyframes heartbeat {
     0% {
-      transform: scale(0);
+        transform: scale(0);
     }
     50%,80%,100%{
-      transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }70%,90%{
-      transform: scale(0.8);
-      opacity: 1;
+        transform: scale(0.8);
+        opacity: 1;
     }
-  }
+}
+
+.headerMobile{
+    position: relative;
+    background-image: linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%,rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%,rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%,rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%,rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%,rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%,rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),linear-gradient(90deg, rgb(24,34,60),rgb(24,34,60));
+}
+
+.headerMobile h1{
+    text-shadow: 2px 2px 15px black;
+}
+
+
+
+.poligonMobile{
+    border-radius: 64% 36% 68% 32% / 22% 30% 70% 78% ;
+    background: #008b6d84;
+    height: 80%;
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fluid infinite linear alternate-reverse 3s
+    
+}
+
+@keyframes fluid {
+    0%{
+    border-radius: 64% 36% 68% 32% / 22% 30% 70% 78% ;
+
+    }50%{
+    border-radius: 38% 62% 12% 88% / 57% 56% 44% 43% ;
+
+    }100%{
+        border-radius: 61% 39% 22% 78% / 39% 64% 36% 61%  ;
+    }
+}
+
+.imgHeaderMobile{
+    filter: drop-shadow(2px 2px 4px #52526e);
+    animation:zoom 0.6s ease;
+    max-height: 400px;
+}
+
+
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 
 

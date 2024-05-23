@@ -11,10 +11,10 @@ function Lezioni() {
         </div>
       </header>
       <section className="mt-14 grid grid-cols-2 gap-2 overflow-x-hidden">
-        <Observer classAdd="observerRight" className="col-span-2 lg:col-span-1 flex lg:justify-end justify-center order-2 lg:order-1 px-6 md:px-0">
-          <div className="imgLezioni border lg:h-full h-[300px] md:w-2/3 w-full mt-5 md:mt-0 "></div>
-        </Observer>
-        <Observer classAdd="observerLeft" className="col-span-2 lg:col-span-1 flex flex-col justify-center items-center lg:justify-start lg:items-start px-6 md:px-10 lg:pe-36 order-1 lg:order-2 lg:py-8">
+        <div className="col-span-2 lg:col-span-1 flex lg:justify-end justify-center order-2 lg:order-1 px-6 md:px-0 ">
+          <div className="imgLezioni border lg:h-full h-[300px] md:w-2/3 w-full mt-5 md:mt-0 animation-left "></div>
+        </div>
+        <div  className="col-span-2 lg:col-span-1 flex flex-col justify-center items-center lg:justify-start lg:items-start px-6 md:px-10 lg:pe-36 order-1 lg:order-2 lg:py-8 animation-right">
           <h3 className="bg-[var(--acc)] px-3 rounded-xl text-[var(--white)]">
             Corsi individuali e di gruppo
           </h3>
@@ -34,7 +34,7 @@ function Lezioni() {
             giocatore esperto, inclusi i più piccoli, c&rsquo;è una lezione su
             misura per te per esplorare il meraviglioso mondo del padel.
           </p>
-        </Observer>
+        </div>
       </section>
       <Observer
         tag="section"
@@ -61,7 +61,7 @@ function Lezioni() {
             Scegli il piano perfetto per te
           </h2>
           <p className="mt-5">
-          Scopri le lezioni individuali e di gruppo personalizzate, tenute da istruttori certificati, per migliorare le tue abilità nel padel. Pianifica la tua sessione di allenamento su misura e goditi un'esperienza di apprendimento coinvolgente e divertente con i tuoi amici o con istruttori dedicati. 
+          Scopri le lezioni individuali e di gruppo personalizzate, tenute da istruttori certificati, per migliorare le tue abilità nel padel. Pianifica la tua sessione di allenamento su misura e goditi un&rsquo;esperienza di apprendimento coinvolgente e divertente con i tuoi amici o con istruttori dedicati. 
           </p>
         </div>
         <div className="col-span-3 lg:col-span-2 flex flex-wrap justify-center items-center mt-10 lg:mt-0">
@@ -227,7 +227,7 @@ function Lezioni() {
             </div>
             <div className="py-5 flex justify-center items-center">
             <a href="tel:+393487263203">
-              <button className="btn  text-white">Chiama e pronota</button>
+              <button className="btnCustom  text-white">Chiama e pronota</button>
               </a>
             </div>
           </Observer>
