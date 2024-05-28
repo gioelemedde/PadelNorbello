@@ -1,0 +1,25 @@
+.headerTornei{
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../public/img/tornei.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.bgFemminile{
+    background: linear-gradient(rgba(24, 34, 60, 0.9),rgba(24, 34, 60, 0.9)), url(../../public/img/torneoFemminile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bgMaschile{
+    background:  linear-gradient(rgba(24, 34, 60, 0.9),rgba(24, 34, 60, 0.9)), url(../../public/img/mail.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bgMisto{
+    background:  linear-gradient(rgba(24, 34, 60, 0.9),rgba(24, 34, 60, 0.9)), url(../../public/img/misto.jpg);
+    background-position: center;
+    background-size: cover;
+}

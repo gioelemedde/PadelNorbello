@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model CeIscritti{
+model CeIscritti {
   id String @id @default(uuid())
   nomeGenitore String
   cognomeGenitore String
@@ -21,8 +21,19 @@ model CeIscritti{
   email String
   nomeBambino String
   cognomeBambino String
-  giugnoPagato Boolean @default(false)
-  luglioPagato Boolean @default(false)
-  agostoPagato Boolean @default(false)
-  creatoIl DateTime @default(now())
+  giugnoPagato String @default("NO")
+  luglioPagato String @default("NO")
+  agostoPagato String @default("NO")
+  createAt DateTime @default(now())
+}
+
+
+model Tornei {
+  id String @id @default(uuid())
+  nomeTorneo String
+  dataInizio String
+  dataFine String
+  tipologiaTorneo String
+  linkTorneo String
+  createAt DateTime @default(now())
 }

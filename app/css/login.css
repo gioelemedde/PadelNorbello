@@ -1,0 +1,15 @@
+.formCreate{
+    color: var(--white);
+}
+
+.formCreate input{
+    background-color: transparent;
+    border-bottom: 2px solid var(--acc);
+    border-radius: 5px;
+}
+
+.formCreate input:focus{
+    outline: none;
+    border: 2px solid var(--acc);
+    border-radius: 5px;
+}

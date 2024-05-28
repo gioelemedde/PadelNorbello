@@ -54,7 +54,7 @@ function FormCreate() {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="bg-[var(--dark-blue)] px-8 py-5 shadow-xl w-full flex flex-col items-center rounded-3xl"
+        className="bg-[var(--dark-blue)] px-8 py-5 shadow-xl w-full flex flex-col items-center rounded-3xl formCreate"
       >
         <h2 className="text-[var(--acc)] mb-8 text-center text-2xl">
           Compila e Iscriviti

@@ -8,6 +8,7 @@
   --acc-50: #008b6dbc;
   --dark-blue: #18223C;
   --dark-blue-50: #18223cb4;
+  --blue-soft: #233155b4;
   --white: #ffffff;
 }
 ::-webkit-scrollbar {
@@ -27,6 +28,10 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--acc);
+}
+
+button{
+  cursor: pointer !important;
 }
 
 @font-face {
@@ -222,6 +227,9 @@ h1,h2,h3,h4{
       transform: scale(1);
   }
 }
+
+
+
 
 
 

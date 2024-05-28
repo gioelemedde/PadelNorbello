@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import "../app/css/navbar.css";
-
+import { usePathname } from "next/navigation";
 import {
   Navbar,
   Collapse,
@@ -11,7 +11,7 @@ import {
   IconButton,
 } from "@material-tailwind/react"; 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 
 export function NavbarDefault() {
   const path = usePathname();
@@ -25,11 +25,11 @@ export function NavbarDefault() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 ms-0 md:ms-8 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-[var(--white)]">
+    <ul className="mt-2 mb-4 ms-0  flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-[var(--white)]">
       <Typography as="li" className="flex items-center gap-x-2 p-1 linkNav">
         <Link
           href="/campoEstivo"
-          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/campoEstivo" ? 'text-[var(--acc)]' : ''}`}
+          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/campoEstivo" ? 'text-[var(--acc)] font-bolder' : ''}`}
         >
           Campo Estivo
         </Link>
@@ -37,7 +37,7 @@ export function NavbarDefault() {
       <Typography as="li" className="flex items-center gap-x-2 p-1 linkNav">
         <Link
           href="/lezioni"
-          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/lezioni" ? 'text-[var(--acc)]' : ''}`}
+          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/lezioni" ? 'text-[var(--acc)] font-bolder' : ''}`}
         >
           Lezioni
         </Link>
@@ -45,24 +45,16 @@ export function NavbarDefault() {
       <Typography as="li" className="flex items-center gap-x-2 p-1 linkNav">
         <Link
           href="/tornei"
-          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/tornei" ? 'text-[var(--acc)]' : ''}`}
+          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/tornei" ? 'text-[var(--acc)] font-bolder' : ''}`}
           >
           Tornei
-        </Link>
-      </Typography>
-      <Typography as="li" className="flex items-center gap-x-2 p-1 linkNav ">
-        <Link
-          href="/trovaGiocatori"
-          className={`flex items-center hover:text-[var(--acc)] font-semibold text-xl md:text-base ${path === "/trovaGiocatori" ? 'text-[var(--acc)]' : ''}`}
-        >
-          Trova Giocatori
         </Link>
       </Typography>
     </ul>
   );
 
   return (
-    <Navbar className="px-4 py-2 lg:px-8 border-none rounded-none fixed top-0 w-full z-50 bg-[var(--dark-blue)] md:border-none">
+    <Navbar className={`px-4 py-2 lg:px-8 border-none rounded-none fixed top-0 w-full z-50 bg-[var(--dark-blue)] md:border-none`}>
       <div className=" flex items-center justify-between text-[--white]">
         <Link href="/">
           <Typography as="div" className=" cursor-pointer py-1.5  ">

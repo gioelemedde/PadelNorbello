@@ -1,8 +1,11 @@
+'use client'
+import { usePathname } from "next/navigation";
 import "../app/css/footer.css";
 
 function Footer() {
+  const path = usePathname();
   return (
-    <footer className="text-[var(--white)] mt-20">
+    <footer className={`text-[var(--white)] mt-20 ${path === "/dashboard" ? 'hidden' : ''}`}>
       <div className="grid grid-cols-4">
         <div className=" col-span-4 md:col-span-2 border-none">
           <iframe
@@ -70,17 +73,21 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer grid grid-cols-4 p-10 md:py-20 gap-20">
-        <div className="col-span-4 md:col-span-1">
-          <h2 className="mb-2 text-xl">IL NOSTRO CLUB</h2>
+      <div className="footer grid grid-cols-3 p-10 md:py-20 gap-20 ">
+        <div className="col-span-3 md:col-span-1 md:flex md:justify-center  md:w-full">
+          <div>
+            <h2 className="mb-2 text-xl">IL NOSTRO CLUB</h2>
           <p>
             Sed sit amet nisl in velit viverra bibendum in ac nisi. Etiam
             efficitur dui vitae sem rutrum, id pretium nunc varius. Vestibulum
             hendrerit malesuada .
           </p>
+          </div>
+          
         </div>
-        <div className="col-span-4 md:col-span-1">
-          <h2 className="mb-2 text-xl">TUTTI I CONTATTI</h2>
+        <div className="col-span-3 md:col-span-1 md:flex md:justify-center  md:w-full ">
+          <div>
+            <h2 className="mb-2 text-xl">TUTTI I CONTATTI</h2>
           <ul>
             <li className="mb-3">
               <svg
@@ -151,9 +158,11 @@ function Footer() {
               09 - 22
             </li>
           </ul>
+          </div>
         </div>
-        <div className="col-span-4 md:col-span-1">
-          <h2 className="mb-2 text-xl">SOCIAL</h2>
+        <div className="col-span-3 md:col-span-1 md:flex md:justify-center md:w-full">
+          <div>
+            <h2 className="mb-2 text-xl">SOCIAL</h2>
           <div className="flex w-full items-center">
             <a href="https://www.facebook.com/profile.php?id=61559137780209&locale=it_IT" className="me-3">
               <svg
@@ -247,15 +256,9 @@ function Footer() {
                 </g>
               </svg>
             </a>
+          </div> 
           </div>
-        </div>
-        <div className="col-span-4 md:col-span-1">
-          <h2 className="mb-2 text-xl">SPONSOR</h2>
-          <p>
-            Sed sit amet nisl in velit viverra bibendum in ac nisi. Etiam
-            efficitur dui vitae sem rutrum, id pretium nunc varius. Vestibulum
-            hendrerit malesuada .
-          </p>
+         
         </div>
       </div>
     </footer>
