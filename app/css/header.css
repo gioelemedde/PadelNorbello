@@ -12,6 +12,11 @@
     text-shadow: 2px 2px 15px black;
 }
 
+.titleMobile{
+    text-shadow: 1px 1px 10px rgba(17, 2, 2, 0.1)!important;
+
+}
+
 .triangle{
     position: absolute;
     width: 350px;

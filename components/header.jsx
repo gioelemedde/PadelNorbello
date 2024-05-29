@@ -208,15 +208,3 @@ function Header() {
 }
 
 export default Header;
-
-{
-  /* <div className="poligonMobile z-0"></div>
-          <Image
-            src="/img/header.png"
-            width={500}
-            height={500}
-            priority
-            alt="logo"
-            className="w-auto h-full relative z-2 imgHeaderMobile "
-          /> */
-}

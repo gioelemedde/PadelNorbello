@@ -123,7 +123,7 @@
 
 .cardCampo3::after{
     content: 'IN ARRIVO !';
-    width: 50%;
+    width: 45%;
     height: 40%;
     background-color: rgba(164, 9, 9, 0.851);
     position: absolute;
@@ -132,7 +132,7 @@
     clip-path: polygon(100% 0, 0 0, 0 100%);
     display: flex;
     color: white;
-    padding: 15px 10px;
+    padding: 10px 8px;
     font-size: large;
 }
 
