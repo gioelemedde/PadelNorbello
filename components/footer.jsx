@@ -78,9 +78,7 @@ function Footer() {
           <div>
             <h2 className="mb-2 text-xl">IL NOSTRO CLUB</h2>
           <p>
-            Sed sit amet nisl in velit viverra bibendum in ac nisi. Etiam
-            efficitur dui vitae sem rutrum, id pretium nunc varius. Vestibulum
-            hendrerit malesuada .
+          Struttura di padel inaugurata nel 2024. Offriamo campi all'avanguardia, progettati per garantire un'esperienza di gioco eccezionale per tutti i livelli. Venite a scoprire il nostro centro moderno e ben attrezzato.
           </p>
           </div>
           

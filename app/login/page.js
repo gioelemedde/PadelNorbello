@@ -1,3 +1,4 @@
+'use server'
 import FormLogin from "@/components/formLogin";
 import ".././css/login.css";
 import readUserSession from "../lib/actions";
