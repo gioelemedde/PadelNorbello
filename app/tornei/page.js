@@ -88,7 +88,7 @@ async function Tornei() {
                     </a>
                     }
                     {!torneo.linkTorneo && <a href="tel:+3487263203" target="_blank">
-                      <button className="btn-nav">Chiama e Pronota</button>
+                      <button className="btn-nav">Chiama e Iscriviti</button>
                     </a>
                     }
                     
