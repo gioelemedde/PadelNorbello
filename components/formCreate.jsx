@@ -1,10 +1,13 @@
 "use client";
+import { useFormStatus } from "react-dom";
 import { create } from "@/app/db/action";
 import { useRef, useState } from "react";
 
 function FormCreate() {
+  const { pending } = useFormStatus();
   const formRef = useRef(null);
   const [errors, setErrors] = useState({});
+  const [message, setMessage] = useState("");
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -43,10 +46,16 @@ function FormCreate() {
     } else {
       setErrors({});
     }
-
+    setMessage(
+      "Iscrizione effettuata correttamente. Ti ricontatteremo a breve per fornirti tutte le informazioni necessarie."
+    );
     await create(formData);
-    document.getElementById("modalCe").showModal();
+
     formRef.current.reset();
+
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
   }
 
   return (
@@ -63,7 +72,9 @@ function FormCreate() {
           <div className="col-span-2 md:col-span-1">
             <label className="mb-2">Nome Genitore</label>
             <input
-              className={errors.nomeGenitore ? "border border-red-500 w-full" : " w-full"}
+              className={
+                errors.nomeGenitore ? "border border-red-500 w-full" : " w-full"
+              }
               type="text"
               name="nomeGenitore"
             />
@@ -74,7 +85,11 @@ function FormCreate() {
           <div className="col-span-2 md:col-span-1">
             <label className="mb-2">Cognome Genitore</label>
             <input
-              className={errors.cognomeGenitore ? "border border-red-500 w-full" : "w-full"}
+              className={
+                errors.cognomeGenitore
+                  ? "border border-red-500 w-full"
+                  : "w-full"
+              }
               type="text"
               name="cognomeGenitore"
             />
@@ -85,7 +100,11 @@ function FormCreate() {
           <div className="col-span-2 md:col-span-1">
             <label className="mb-2">Numero di Telefono</label>
             <input
-              className={errors.numeroTelefono ? "border border-red-500 w-full" : "w-full"}
+              className={
+                errors.numeroTelefono
+                  ? "border border-red-500 w-full"
+                  : "w-full"
+              }
               type="tel"
               name="numeroTelefono"
               inputMode="numeric"
@@ -112,13 +131,15 @@ function FormCreate() {
           <div className="col-span-2 md:col-span-1">
             <label className="mb-2">Email</label>
             <input
-              className={errors.email ? "border border-red-500 w-full" : "w-full"}
+              className={
+                errors.email ? "border border-red-500 w-full" : "w-full"
+              }
               type="email"
               name="email"
               pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
               onChange={(e) => {
                 const value = e.target.value;
-                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                if (!/^[^\s@]+\@[^\s@]+\.[^\s@]+$/.test(value)) {
                   setErrors((prevErrors) => ({
                     ...prevErrors,
                     email: "Inserisci un'email valida",
@@ -138,7 +159,9 @@ function FormCreate() {
           <div className="col-span-2 md:col-span-1">
             <label className="mb-2">Nome Bambino</label>
             <input
-              className={errors.nomeBambino ? "border border-red-500 w-full" : "w-full"}
+              className={
+                errors.nomeBambino ? "border border-red-500 w-full" : "w-full"
+              }
               type="text"
               name="nomeBambino"
             />
@@ -149,7 +172,11 @@ function FormCreate() {
           <div className="col-span-2 md:col-span-1">
             <label className="mb-2">Cognome Bambino</label>
             <input
-              className={errors.cognomeBambino ? "border border-red-500 w-full" : "w-full"}
+              className={
+                errors.cognomeBambino
+                  ? "border border-red-500 w-full"
+                  : "w-full"
+              }
               type="text"
               name="cognomeBambino"
             />
@@ -158,19 +185,19 @@ function FormCreate() {
             )}
           </div>
         </div>
-        <button type="submit" className="mt-5 font-bold btnCustom w-full lg:w-auto">
-          Conferma iscrizione
+        <button
+          type="submit"
+          className="mt-5 font-bold btnCustom w-full lg:w-auto"
+          disabled={pending}
+        >
+          {pending ? "Invio dati..." : "Conferma Iscrizione"}
         </button>
+        {message && (
+          <div className="mt-5 text-green-500">
+            <h2>{message}</h2>
+          </div>
+        )}
       </form>
-      <dialog id="modalCe" className="modal">
-        <div className="modal-box bg-[var(--dark-blue)]">
-          <h3 className="font-bold text-lg text-white">Iscrizione effettutata correttamente</h3>
-          <p className="py-4 text-white">Ti rincottateremo a breve per fornirti tutte le informazioni necessarie</p>
-        </div>
-        <form method="dialog" className="modal-backdrop">
-          <button>close</button>
-        </form>
-      </dialog>
     </>
   );
 }

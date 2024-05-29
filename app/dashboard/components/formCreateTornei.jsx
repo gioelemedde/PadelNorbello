@@ -49,7 +49,7 @@ function FormCreateTornei() {
             className=" bg-transparent w-full text-center border-2 rounded-md pb-1 "
             type="text"
             name="linkTorneo"
-            placeholder="Link Toreno"
+            placeholder="Link Torneo"
           />
         </div>
         <div className="col-span-1 text-center ">

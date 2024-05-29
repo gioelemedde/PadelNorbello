@@ -5,7 +5,6 @@ import { redirect } from "next/navigation";
 
 export default async function Login() {
   const {data} = await readUserSession()
-  console.log(data.user);
 
 if (data.user) {
   redirect('/dashboard')

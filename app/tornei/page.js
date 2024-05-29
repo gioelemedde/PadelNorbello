@@ -82,9 +82,16 @@ async function Tornei() {
                     </p>
                   </div>
                   <div className="flex justify-center items-center">
+                   { torneo.linkTorneo &&
                     <a href={torneo.linkTorneo} target="_blank">
                       <button className="btn-nav">Partecipa</button>
                     </a>
+                    }
+                    {!torneo.linkTorneo && <a href="tel:+3487263203" target="_blank">
+                      <button className="btn-nav">Chiama e Pronota</button>
+                    </a>
+                    }
+                    
                   </div>
                 </div>
               </div>

@@ -164,7 +164,7 @@ async function TableCampoEstivo() {
                 </div>
               </div>
             </form>
-            <form action={deleteItem} className="formDelete">
+            <form action={deleteItem} className="formDelete bg-[var(--acc)]">
               <input name="id" value={item.id} type="hidden" />
               <button className="rounded-full h-9 w-9 bg-red-500 flex justify-center items-center active:scale-90">
                 <svg

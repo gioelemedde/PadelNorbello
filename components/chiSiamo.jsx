@@ -49,9 +49,9 @@ function ChiSiamo() {
                     </span>
                     , la tua destinazione per un&rsquo;esperienza di padel di
                     qualità a Norbello. Fondata nel 2024, siamo orgogliosi di
-                    offrire due campi da padel all&rsquo;savanguardia, uno
+                    offrire due campi da padel all&rsquo;avanguardia, uno
                     coperto per goderti il gioco in qualsiasi condizione
-                    meteorologica e uno all&rsquo;saperto per immergerti
+                    meteorologica e uno all&rsquo;aperto per immergerti
                     completamente nella bellezza del nostro clima.
                   </p>
                 </div>
@@ -122,7 +122,7 @@ function ChiSiamo() {
               <div className="bgCampo1 h-[300px] p-4">
                 <div className="border-2 border-[var(--white)] w-full h-full flex flex-col justify-center items-center">
                   <h2 className="text-[var(--white)] text-2xl text-center">
-                    Affitto Campo: 35€
+                    Affitto Campo: 32€
                   </h2>
                   <a
                     href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
@@ -135,19 +135,7 @@ function ChiSiamo() {
               <div className=" w-full lg:ps-10 mt-5 lg:mt-0">
                 <div className=" lg:max-h-[300px] lg:overflow-y-auto">
                   <p className="mb-2 hidden lg:block ">
-                    Il
-                    <span className="font-bold">
-                      {" "}
-                      campo da padel all&rsquo;aperto{" "}
-                    </span>
-                    nostro offre un&rsquo;esperienza di gioco coinvolgente e
-                    dinamica in un ambiente naturale e aperto. La superficie in
-                    erba sintetica garantisce una perfetta combinazione di
-                    stabilità e ammortizzazione, consentendo movimenti fluidi e
-                    rapidi durante il gioco. Le dimensioni standard (10x20
-                    metri) offrono spazio sufficiente per partite competitive e
-                    divertenti, mentre le recinzioni robuste assicurano che la
-                    palla rimanga in gioco senza compromettere la visibilità.
+                    Scopri l&rsquo;esperienza unica del padel nel nostro campo all&rsquo;aperto, immerso in un ambiente naturale e rilassante. Progettato per giocatori di tutti i livelli, il nostro campo offre la superficie ideale per partite avvincenti e divertenti. Vieni a goderti il sole e l&rsquo;aria fresca mentre pratichi il tuo sport preferito. Che tu sia un principiante o un esperto, il nostro campo di padel è il luogo perfetto per migliorare il tuo gioco e trascorrere del tempo di qualità con amici e familiari..
                   </p>
                 </div>
                 <p className="text-[var(--dark-blue)] mb-2 ">
@@ -182,18 +170,7 @@ function ChiSiamo() {
               <div className=" w-full lg:pe-10 mt-5 lg:mt-0 ">
                 <div className="lg:max-h-[300px] lg:overflow-y-auto">
                   <p className="mb-2 hidden lg:block ">
-                    Il
-                    <span className="font-bold">
-                      {" "}
-                      nostro campo da padel al coperto{" "}
-                    </span>
-                    offre un&rsquo;esperienza di gioco senza pari,
-                    indipendentemente dalle condizioni meteorologiche esterne.
-                    La nostra struttura garantisce un ambiente controllato e
-                    confortevole per giocare a padel tutto l&rsquo;anno. Con una
-                    superficie sintetica di alta qualità, i nostri campi offrono
-                    una perfetta combinazione di grip e reattività, consentendo
-                    movimenti agili e veloci
+                    Scopri l&rsquo;esperienza unica del padel nel nostro campo al chiuso, perfetto per giocare in qualsiasi condizione meteorologica. Progettato per giocatori di tutti i livelli, il nostro campo offre la superficie ideale per partite avvincenti e divertenti. Vieni a migliorare le tue abilità tecniche in un ambiente confortevole e ben illuminato. Che tu sia un principiante o un esperto, il nostro campo di padel è il luogo perfetto per migliorare il tuo gioco e trascorrere del tempo di qualità con amici e familiari.
                   </p>
                 </div>
                 <p className="text-[var(--dark-blue)] mb-2 ">
@@ -218,7 +195,7 @@ function ChiSiamo() {
               <div className="bgCampo2 h-[300px] p-4">
                 <div className="border-2 border-[var(--white)] w-full h-full flex flex-col justify-center items-center">
                   <h2 className="text-[var(--white)] text-2xl text-center">
-                    Affitto Campo: 35€
+                    Affitto Campo: 40€
                   </h2>
                   <a
                     href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
@@ -241,29 +218,20 @@ function ChiSiamo() {
               <div className="bgCampo3 h-[300px] p-4">
                 <div className="border-2 border-[var(--white)] w-full h-full flex flex-col justify-center items-center">
                   <h2 className="text-[var(--white)] text-2xl text-center">
-                    Affitto Campo: 35€
+                    Affitto Campo: 32€
                   </h2>
-                  <a
+                  <a disabled={true} 
                     href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
                     target="_blank"
                   >
-                    <button className="btn-card mt-5">Prenota</button>
+                    <button disabled={true} className="btn-card mt-5 cursor-not-allowed opacity-50">Prenota</button>
                   </a>
                 </div>
               </div>
               <div className=" w-full lg:ps-10 mt-5 lg:mt-0">
                 <div className=" lg:max-h-[300px] lg:overflow-y-auto">
                   <p className="mb-2 hidden lg:block ">
-                    Il <span className="font-bold"> campo da pickleball </span>
-                    offre un&rsquo;esperienza di gioco emozionante e
-                    coinvolgente, adatta a giocatori di tutte le età e livelli
-                    di abilità. La nostra struttura offre una superficie in
-                    cemento liscio e resistente, ideale per movimenti rapidi e
-                    reattivi. Le dimensioni standard (20x44 piedi) offrono
-                    spazio sufficiente per partite dinamiche e competitive. Le
-                    linee ben definite assicurano un gioco fluido e senza
-                    confusioni. L&rsquo;illuminazione di qualità garantisce
-                    partite entusiasmanti anche dopo il tramonto.
+                  Scopri l&rsquo;esperienza entusiasmante del pickleball nel nostro campo, progettato per giocatori di tutti i livelli. Che tu sia un principiante o un esperto, il nostro campo offre la superficie ideale per partite divertenti e competitive. Vieni a migliorare le tue abilità tecniche in un ambiente confortevole e ben attrezzato. Il nostro campo di pickleball è il luogo perfetto per trascorrere del tempo di qualità con amici e familiari, praticando uno sport dinamico e coinvolgente.
                   </p>
                 </div>
                 <p className="text-[var(--dark-blue)] mb-2 ">
@@ -323,7 +291,7 @@ function ChiSiamo() {
                     <h3 className="text-[var(--acc)] font-extrabold inline-block me-3">
                       Affitto Campo:
                     </h3>
-                    35€
+                    32€
                   </span>
                 </div>
                 <a
@@ -367,7 +335,7 @@ function ChiSiamo() {
                     <h3 className="text-[var(--acc)] font-extrabold inline-block me-3">
                       Affitto Campo:
                     </h3>
-                    35€
+                    40€
                   </span>
                 </div>
                 <a
@@ -411,15 +379,15 @@ function ChiSiamo() {
                     <h3 className="text-[var(--acc)] font-extrabold inline-block me-3">
                       Affitto Campo:
                     </h3>
-                    35€
+                    32€
                   </span>
                 </div>
-                <a
+                <a disabled={true}
                   className=""
                   href="https://playtomic.io/asd-sport-club-time/d8bd0052-8dc2-48cb-bba2-ba4b99bae9dc?q=PADEL~2024-05-11~~~"
                   target="_blank"
                 >
-                  <button className="btn-card mt-5 w-full uppercase">
+                  <button className="btn-card mt-5 w-full uppercase opacity-50" disabled={true}>
                     Prenota
                   </button>
                 </a>

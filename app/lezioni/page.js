@@ -143,7 +143,7 @@ function Lezioni() {
               </ul>
             </div>
             <div className="py-5 flex justify-center items-center">
-              <a href="tel:+393487263203">
+              <a href="tel:+393496600822">
               <button className="btn2  text-white">Chiama e pronota</button>
               </a>
             </div>
@@ -226,7 +226,7 @@ function Lezioni() {
               </ul>
             </div>
             <div className="py-5 flex justify-center items-center">
-            <a href="tel:+393487263203">
+            <a href="tel:+393496600822">
               <button className="btnCustom  text-white">Chiama e pronota</button>
               </a>
             </div>
