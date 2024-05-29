@@ -4,9 +4,11 @@ import Image from "next/image";
 import TabCampoEstivo from "./components/tabCampoEstivo";
 import ".././css/admin.css";
 import TabTornei from "./components/tabTornei";
+import { unstable_noStore as noStore } from 'next/cache';
 
 
 export default async function PrivatePage() {
+  noStore();
   const { data, error } = await readUserSession();
 
 
