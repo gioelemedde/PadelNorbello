@@ -3,6 +3,8 @@ import "./css/globals.css";
 import "./css/observer.css";
 import { NavbarDefault } from "@/components/nav";
 import Footer from "@/components/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className} suppressHydrationWarning={true}>
         <NavbarDefault />
         <div className=" min-h-screen">{children}</div>
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
