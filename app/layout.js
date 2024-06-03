@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sport Club Time ASD",
-  description: "Padel Norbello",
+  description: "Affito Campi di Padel a Norbello",
 };
 
 export default function RootLayout({ children }) {
