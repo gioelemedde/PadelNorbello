@@ -13,7 +13,6 @@ function FormCreate() {
     event.preventDefault();
     const formData = new FormData(formRef.current);
 
-    // Validazione
     let formErrors = {};
     if (!formData.get("nomeGenitore")) {
       formErrors.nomeGenitore = "Campo obbligatorio";

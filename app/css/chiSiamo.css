@@ -48,7 +48,7 @@
     position: relative;
 }
 
-.bgCampo3::after{
+/* .bgCampo3::after{
     content: 'IN ARRIVO !';
     width: 50%;
     height: 50%;
@@ -61,7 +61,7 @@
     color: white;
     padding: 25px;
     font-size: larger;
-}
+} */
 
 .cardCampo1::after{
     content: '';
@@ -122,18 +122,14 @@
 }
 
 .cardCampo3::after{
-    content: 'IN ARRIVO !';
-    width: 45%;
-    height: 40%;
-    background-color: rgba(164, 9, 9, 0.851);
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: var(--acc-50);
     position: absolute;
     top: 0;
     left: 0;
     clip-path: polygon(100% 0, 0 0, 0 100%);
-    display: flex;
-    color: white;
-    padding: 10px 8px;
-    font-size: large;
 }
 
 .cardCampo3::before{
